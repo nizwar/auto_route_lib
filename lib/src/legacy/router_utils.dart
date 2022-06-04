@@ -24,8 +24,8 @@ PageRoute defaultUnknownRoutePage(RouteSettings settings) => MaterialPageRoute(
                 ),
               ),
               if (!ModalRoute.of(ctx).isFirst)
-                OutlineButton.icon(
-                  label: Text('Back'),
+                IconButton(
+//                   label: Text('Back'),
                   icon: Icon(Icons.arrow_back),
                   onPressed: () => Navigator.of(ctx).pop(),
                 )
@@ -56,8 +56,8 @@ PageRoute misTypedArgsRoute<T>(Object args) {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16.0),
-            OutlineButton.icon(
-              label: Text('Back'),
+            IconButton(
+//               label: Text('Back'),
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.of(ctx).pop(),
             )
